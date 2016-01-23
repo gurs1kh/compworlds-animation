@@ -61,7 +61,7 @@ function Villan(game) {													//startX, startY, frameWidth, frameHeight, f
 	this.telIn = true;
 	this.telOut = false;
 	this.down = this.up = this.left = this.right = false;
-    Entity.call(this, game, 200, 200);
+    Entity.call(this, game, 200 - 16, 200 - 16);
 }
 
 Villan.prototype = new Entity();
