@@ -61,9 +61,7 @@ function Villan(game) {													//startX, startY, frameWidth, frameHeight, f
 	this.telIn = true;
 	this.telOut = false;
 	this.down = this.up = this.left = this.right = false;
-    this.radius = 100;
-    this.ground = 400;
-    Entity.call(this, game, 50, 50);
+    Entity.call(this, game, 200, 200);
 }
 
 Villan.prototype = new Entity();
