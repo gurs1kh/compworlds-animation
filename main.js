@@ -91,6 +91,7 @@ Villan.prototype.update = function () {
 	} else this.down = false;
     if (this.telOut) {
 		this.game.map[32] = false;
+		this.animation.startY = 128;
         if (this.telOutAnimation.isDone()) {
             this.telOutAnimation.elapsedTime = 0;
             this.telOut = false;
@@ -99,6 +100,7 @@ Villan.prototype.update = function () {
 			this.y = Math.round(Math.random() * (400 - 32));
         }
     } else if (this.telIn) {
+		this.animation.startY = 128;
 		if (this.telInAnimation.isDone()) {
             this.telInAnimation.elapsedTime = 0;
             this.telIn = false;
